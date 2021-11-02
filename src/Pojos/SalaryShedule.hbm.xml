@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Mar 14, 2020 5:08:16 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="Pojos.SalaryShedule" table="salary_shedule" catalog="salary_management_system" optimistic-lock="version">
+        <id name="salarySheduleId" type="java.lang.Integer">
+            <column name="salary_shedule_id" />
+            <generator class="identity" />
+        </id>
+        <property name="staffId" type="java.lang.Integer">
+            <column name="staff_id" />
+        </property>
+        <property name="basicSalary" type="java.lang.Double">
+            <column name="basic_salary" precision="22" scale="0" />
+        </property>
+        <property name="overTimeAmount" type="java.lang.Double">
+            <column name="over_time_amount" precision="22" scale="0" />
+        </property>
+        <property name="allowns" type="java.lang.Double">
+            <column name="allowns" precision="22" scale="0" />
+        </property>
+    </class>
+</hibernate-mapping>

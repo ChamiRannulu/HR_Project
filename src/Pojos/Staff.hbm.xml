@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Mar 14, 2020 5:08:16 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="Pojos.Staff" table="staff" catalog="salary_management_system" optimistic-lock="version">
+        <id name="employeeId" type="java.lang.Integer">
+            <column name="employeeId" />
+            <generator class="identity" />
+        </id>
+        <property name="fname" type="string">
+            <column name="fname" length="45" />
+        </property>
+        <property name="lname" type="string">
+            <column name="lname" length="45" />
+        </property>
+        <property name="gender" type="string">
+            <column name="gender" length="45" />
+        </property>
+        <property name="no" type="string">
+            <column name="no" length="45" />
+        </property>
+        <property name="street" type="string">
+            <column name="street" length="45" />
+        </property>
+        <property name="city" type="string">
+            <column name="city" length="45" />
+        </property>
+        <property name="mobile" type="string">
+            <column name="mobile" length="45" />
+        </property>
+        <property name="telephone" type="string">
+            <column name="telephone" length="45" />
+        </property>
+        <property name="email" type="string">
+            <column name="email" length="45" />
+        </property>
+        <property name="dateOfJoin" type="string">
+            <column name="date_of_join" length="45" />
+        </property>
+        <property name="basicSalary" type="string">
+            <column name="basic_salary" length="45" />
+        </property>
+        <property name="staffTypeStaffTypeid" type="int">
+            <column name="staff_type_staff_typeid" not-null="true" />
+        </property>
+        <property name="status" type="java.lang.Boolean">
+            <column name="status" />
+        </property>
+    </class>
+</hibernate-mapping>
